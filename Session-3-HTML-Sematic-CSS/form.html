@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="result.html" method="GET" name="myform">
+        <div>
+            <label for="cars">Choose a car:</label>
+            <select name="car-select" id="cars"><br>
+
+                <optgroup label="Expensive Cars">
+
+                    <option value="porche">Porche</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                    <option value="OPEL">OPEL</option>
+
+                </optgroup>
+
+                <optgroup label="Cheaper Cars">
+
+                    <option value="porche">Tofas</option>
+                    <option value="Mercedes">Lada</option>
+                    <option value="BMW">Tata</option>
+
+                </optgroup><br>
+
+                              
+            </select><br><br>
+        </div>
+
+        <div>
+
+            <label for="message">Enter your comment here:</label><br>
+            <textarea 
+                name="comment"
+                id="message"
+                cols="30"
+                rows="10">
+            </textarea><br><br>
+
+        </div>
+
+        <div>
+            <label for="mybrowser">Browser</label>
+            <br>
+            <input
+                type="text"
+                name="browser-option"
+                id="mybrowser"
+                list="browsers"><br><br>
+            
+                <datalist id="browsers">
+                    <option value="Chrome"></option>
+                    <option value="Safari"></option>
+                    <option value="Mozilla"></option>
+                    <option value="Opera"></option>
+                    <option value="Brave"></option>
+                </datalist> <br><br>
+                
+                
+            <fieldset>
+                <legend>Personal Info:</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="name" id="firstname" placeholder="Ethan"><br><br>
+                <label for="Lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Wood">
+
+            </fieldset>  <br><br>
+
+            <input type="submit" value="SEND">
+            
+            
+
+
+
+
+    </form>
+    
+</body>
+</html>

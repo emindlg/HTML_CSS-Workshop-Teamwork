@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İŞ BAŞVURU FORMU</title>
+</head>
+<style>
+    body {
+        background-image: url('arkaplan.jpg')  ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-position: scroll ;
+        background-color:;
+        
+    }
+
+    input {
+        width: 35%;
+        height: 20px;
+        border-radius: 7px;
+        border-color: chocolate;        
+        border-left: 3px solid rgb(207, 140, 123) ;
+        
+    }
+
+    #adres{
+        height: 60px;
+    }
+
+    
+   
+</style>
+<body>
+    <div>
+       <label for="ad">Adınız ve Soyadınız</label>
+       <input type="text" name="username" id="ad" placeholder="Adınızı ve Soyadınızı Giriniz"> <br><br>
+       <label for="dogumyeri">Doğum Yeri</label>
+       <input type="text" name="sehir" id="dogumyeri" placeholder="Doğum Yerinizi Giriniz"><br><br>
+       
+    </div>
+
+    <div>
+
+        <label for="tarih">Doğum Tarihi </label>
+        <input type="date" name="doğum" id="tarih"><br><br>
+
+
+    </div>
+    <div>
+
+        <label for="eposta">Mail Adresiniz</label>
+        <input type="email" name="email" id="eposta" placeholder="example@gmail.com"><br><br>
+
+    </div>
+
+    <div>
+
+        <label for="ceptel">Cep Telefon Numarası</label>
+        <input type="tel" name="phone" id="ceptel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx - xxx - xx - xx"><br><br> 
+
+    </div>
+
+    <div>
+
+        <label for="adres">Adres</label>
+        <input type="text" name="address" id="adres" min="20" max="250"><br><br>
+
+    </div>
+
+    <div>
+
+        <label for="dosya">Profil Fotoğrafı</label>
+        <input type="file" name="file" id="dosya" multiple><br><br>
+
+    </div>
+
+
+    <div>
+        <h>Cinsiyet</h><br>
+
+            <label for="">Erkek</label>
+            <input type="radio" name="cinsiyet" id="erkek" >
+            
+
+    </div>
+
+    <div>
+        <label for="">Bayan</label>
+        <input type="radio" name="cinsiyet" id="bayan">
+        
+    </div>
+
+    <input type="reset">
+    <input type="submit">
+
+
+</body>
+</html>
